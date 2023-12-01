@@ -18,7 +18,7 @@ Given the `head` of a linked list, remove the `n th` node from the end of the li
 
 # Solution
 
-    ```
+```
     /**
     * @param {ListNode} head
     * @param {number} n
@@ -51,7 +51,7 @@ Given the `head` of a linked list, remove the `n th` node from the end of the li
         return head;
     };
 
-    ```
+```
 
 This code snippet is an implementation of the `removeNthFromEnd` function, which removes the nth node from the end of a linked list. Let's break down the code step by step:
 
