@@ -79,6 +79,7 @@ So, the total minimum time required to visit all points is 5 + 8 = 13. The code 
 
 
 ## Code 
+#### JavaScript
 ``` JavaScript []
 /**
  * @param {number[][]} points
@@ -96,6 +97,7 @@ var minTimeToVisitAllPoints = function (points) {
     return time;
 };
 ```
+#### Java
 ``` Java []
 class Solution {
     public int minTimeToVisitAllPoints(int[][] points) {
