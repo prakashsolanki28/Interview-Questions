@@ -18,38 +18,38 @@ Given the `head` of a linked list, remove the `n th` node from the end of the li
 
 # Solution
 
-```
-    /**
-    * @param {ListNode} head
-    * @param {number} n
-    * @return {ListNode}
-    */
-    var removeNthFromEnd = function (head, n) {
-        let current = head;
-        let count = 0;
-        while (current) {
-            current = current.next;
-            count++;
-        }
+``` JavaScript []
+/**
+* @param {ListNode} head
+* @param {number} n
+* @return {ListNode}
+*/
+var removeNthFromEnd = function (head, n) {
+    let current = head;
+    let count = 0;
+    while (current) {
+        current = current.next;
+        count++;
+    }
 
-        let removeItem = count - n;
-        current = head;
-        let previous = current;
-        if (removeItem != 0) {
-            while (current) {
-                if (removeItem == 0) {
-                    previous.next = current.next;
-                }
-                removeItem--;
-                previous = current;
-                current = current.next;
+    let removeItem = count - n;
+    current = head;
+    let previous = current;
+    if (removeItem != 0) {
+        while (current) {
+            if (removeItem == 0) {
+                previous.next = current.next;
             }
+            removeItem--;
+            previous = current;
+            current = current.next;
         }
-        else {
-            head = head.next;
-        }
-        return head;
-    };
+    }
+    else {
+        head = head.next;
+    }
+    return head;
+};
 
 ```
 

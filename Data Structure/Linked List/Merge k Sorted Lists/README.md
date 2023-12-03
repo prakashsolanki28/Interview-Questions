@@ -23,7 +23,7 @@ This code snippet demonstrates how to merge k sorted linked lists into a single 
 
 ## Code
 
-```
+``` JavaScript []
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
