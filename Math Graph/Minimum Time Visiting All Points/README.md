@@ -60,20 +60,20 @@ This function calculates the minimum time required to visit all the points in a 
 
 ### Let's take a example:
 
-    ```
-    let points = [
-    [1, 1],
-    [3, 4],
-    [-1, 0],
-    ];
+```
+let points = [
+[1, 1],
+[3, 4],
+[-1, 0],
+];
 
-    console.log(minTimeToVisitAllPoints(points));
-    ```
+console.log(minTimeToVisitAllPoints(points));
+```
 
-    1. From point [1, 1] to [3, 4], the distance is (3-1) + (4-1) = 5.
-    2. From point [3, 4] to [-1, 0], the distance is |-1-3| + (0-4) = 8.
-    
-    So, the total minimum time required to visit all points is 5 + 8 = 13. The code will output 13 when executed.
+1. From point [1, 1] to [3, 4], the distance is (3-1) + (4-1) = 5.
+2. From point [3, 4] to [-1, 0], the distance is |-1-3| + (0-4) = 8.
+
+So, the total minimum time required to visit all points is 5 + 8 = 13. The code will output 13 when executed.
 
 
 
