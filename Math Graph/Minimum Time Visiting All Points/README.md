@@ -60,7 +60,7 @@ This function calculates the minimum time required to visit all the points in a 
 
 ### Let's take a example:
 
-    ````
+    ```
     let points = [
     [1, 1],
     [3, 4],
@@ -68,7 +68,7 @@ This function calculates the minimum time required to visit all the points in a 
     ];
 
     console.log(minTimeToVisitAllPoints(points));
-    ````
+    ```
 
     1. From point [1, 1] to [3, 4], the distance is (3-1) + (4-1) = 5.
     2. From point [3, 4] to [-1, 0], the distance is |-1-3| + (0-4) = 8.
@@ -79,20 +79,34 @@ This function calculates the minimum time required to visit all the points in a 
 
 
 ## Code 
-```
-    /**
-    * @param {number[][]} points
-    * @return {number}
-    */
-    var minTimeToVisitAllPoints = function (points) {
+``` JavaScript []
+/**
+ * @param {number[][]} points
+ * @return {number}
+ */
+var minTimeToVisitAllPoints = function (points) {
 
-        var time = 0;
-        for (let i = 0; i < points.length; i++) {
+    var time = 0;
+    for (let i = 0; i < points.length; i++) {
+        if (i == points.length - 1) break;
+        let x_diff = Math.abs(points[i][0] - points[i + 1][0]);
+        let y_diff = Math.abs(points[i][1] - points[i + 1][1]);
+        time += x_diff > y_diff ? x_diff : y_diff;
+    }
+    return time;
+};
+```
+``` Java []
+class Solution {
+    public int minTimeToVisitAllPoints(int[][] points) {
+         int time = 0;
+        for (int i = 0; i < points.length; i++) {
             if (i == points.length - 1) break;
-            let x_diff = Math.abs(points[i][0] - points[i + 1][0]);
-            let y_diff = Math.abs(points[i][1] - points[i + 1][1]);
+            int x_diff = Math.abs(points[i][0] - points[i + 1][0]);
+            int y_diff = Math.abs(points[i][1] - points[i + 1][1]);
             time += x_diff > y_diff ? x_diff : y_diff;
         }
         return time;
-    };
+    }
+}
 ```
