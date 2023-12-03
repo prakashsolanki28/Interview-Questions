@@ -9,11 +9,13 @@ Given a binary tree, we need to return a list containing the preorder traversal 
 #### Example 1:
 
 **Input:**
+```
 1  
  /  
  4  
  / \  
 4 2
+```
 
 **Output:** 1 4 4 2
 
@@ -52,7 +54,7 @@ The binary tree has a root node with the value 1. It has a left subtree with the
 
    const result = solution.preorder(root);
 
-The preorder method is called with the root of the binary tree (root) as an argument.
+   The preorder method is called with the root of the binary tree (root) as an argument.
 
 3. Execution of preorder Method:
 
@@ -67,8 +69,7 @@ The preorder method is called with the root of the binary tree (root) as an argu
    9. The data of the right child node (2) is pushed into the preorder array.
 
 4. Result:
-
-The result array now contains the elements of the binary tree in preorder traversal order: [1, 4, 4, 2].
+    The result array now contains the elements of the binary tree in preorder traversal order: [1, 4, 4, 2].
 
 ## Code
 
