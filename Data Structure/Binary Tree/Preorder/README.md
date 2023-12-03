@@ -75,7 +75,7 @@ The binary tree has a root node with the value 1. It has a left subtree with the
 
 #### JavaScript
 
-```
+``` JavaScript []
 class Solution {
     inOrder(root) {
         const inorderData = [];
