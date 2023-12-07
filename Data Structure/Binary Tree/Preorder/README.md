@@ -10,11 +10,11 @@ Given a binary tree, we need to return a list containing the preorder traversal 
 
 **Input:**
 ```
-1  
- /  
- 4  
+    1  
+   /  
+  4  
  / \  
-4 2
+4   2
 ```
 
 **Output:** 1 4 4 2
@@ -41,10 +41,10 @@ To use the code, create a binary tree by instantiating `Node` objects and connec
 1. Binary Tree Structure:
 
 ```
-  1
-   /
-  4
- / \
+    1  
+   /  
+  4  
+ / \  
 4   2
 ```
 
